@@ -17,11 +17,34 @@
 
 body {
   @include font-lato;
+
+  color: #414141;
 }
 
 .section-inner {
   width: 1180px;
   margin: 0 auto;
+}
+
+.description-item {
+
+  &__icon {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #6c6c6c;
+  }
 }
 // === / Common === 
 
@@ -127,3 +150,52 @@ body {
   }
 }
 // === / Header === 
+
+// === / Promo ===
+.section-promo {
+  padding: 120px 0;
+
+  &-1 {
+    display: flex;
+
+    &__content,
+    &__video {
+      flex-basis: 50%;
+    }
+
+    &__content {
+      padding-right: 90px;
+
+      .title {
+        font-size: 32px;
+        line-height: 51px;
+        font-weight: 700;
+        margin-bottom: 56px;
+      }
+
+      .description-item {
+        margin-top: 28px;
+      }
+    }
+
+    &__video {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &-2 {
+    display: flex;
+    text-align: center;
+    padding-top: 86px;
+    margin-top: 120px;
+    border-top: 1px solid #e2e2e2;
+
+    .description-item + .description-item {
+      margin-left: 40px;
+    }
+  }
+}
+// === / Promo === 

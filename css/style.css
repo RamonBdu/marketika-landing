@@ -213,4 +213,44 @@ body {
 .section-promo-2 .description-item + .description-item {
   margin-left: 40px;
 }
+
+.section-founder {
+  background-color: #f6fafd;
+  padding-top: 34px;
+}
+
+.section-founder .section-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-founder__img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.section-founder__content {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 50px;
+}
+
+.section-founder__content-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.section-founder__content-name {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+}
+
+.section-founder__content-post {
+  font-size: 20px;
+  line-height: 29px;
+}
 /*# sourceMappingURL=style.css.map */
